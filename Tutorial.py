@@ -1,4 +1,5 @@
 """
+
 Calcular el pago de nomina para el Mes de Noviembre
 
 """
@@ -57,7 +58,7 @@ elif (horasExtra == "n"):
     pass
 
 else:
-     print("\nERROR No Reconosco esa opcion \n")
+    print("\nERROR No Reconosco esa opcion \n")
 
 
 print(f"""
