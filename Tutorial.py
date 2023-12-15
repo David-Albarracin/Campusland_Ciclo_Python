@@ -48,7 +48,7 @@ if (llamadosAten == "s"):
 elif (llamadosAten == "n"):
     pass
 else:
-      print("\nERROR No Reconosco esa opcion \n")
+    print("\nERROR No Reconosco esa opcion \n")
 
 horasExtra = input("Cuenta con horas Extra s/n :>")
 if (horasExtra == "s"):
