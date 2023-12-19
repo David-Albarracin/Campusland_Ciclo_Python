@@ -1,6 +1,38 @@
+import os
+import alumnos
+import menus
+
+run = True
+
+while run:
+    opsMenus = menus.principal()
+    if (opsMenus == 1):
+        alumnos.newAlumno()
+    elif (opsMenus == 3):
+        alumnos.buscarAlumno()
+        os.system("pause")
+    elif (opsMenus == 5):
+        run = False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 """
 PROGRAMA PARA CALCULAR LAS NOTAS DE N ESTUDIANTES..
-"""
+
 import os
 alumnos =[]
 isActive = True
@@ -117,7 +149,7 @@ while (isActive) :
                     totalCategory += nota 
                 #Parciales Operation
                 definitiva = (totalCategory / len(alumno[3]))*0.6
-                
+
                 print(f"El Alumno {alumno[0]} tiene una Definitiva de: {definitiva}")
 
         elif (opMenu == 5):
@@ -128,4 +160,4 @@ while (isActive) :
             os.system("cls")
             print("Opcion invalida")
     os.system("pause")
-        
+"""
