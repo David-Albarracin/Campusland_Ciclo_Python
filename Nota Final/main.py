@@ -1,13 +1,29 @@
 import os
 import alumnos
 import menus
+import notas
 
 run = True
+
+alumnos.alumnoPrueba()
 
 while run:
     opsMenus = menus.principal()
     if (opsMenus == 1):
         alumnos.newAlumno()
+    elif (opsMenus == 2):
+        #"1. Parciales\n2. Quices\n3. Trabajos\n4. Regresar al menu principal"
+        opSubMenuNotas = 0
+        while opSubMenuNotas != 4:
+            opSubMenuNotas = menus.subMenuNotas()
+            codigo = alumnos.getAlumnoID()
+            if (opSubMenuNotas == 1):
+                alumnos.guardarNota("parciales", codigo)
+            elif(opSubMenuNotas == 2):
+                pass
+            elif(opSubMenuNotas == 3):
+                pass
+            opSubMenuNotas = 4
     elif (opsMenus == 3):
         alumnos.buscarAlumno()
         os.system("pause")

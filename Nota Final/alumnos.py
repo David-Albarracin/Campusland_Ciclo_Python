@@ -36,3 +36,45 @@ def buscarAlumno():
             print (f"{key}: {valor}")
 
     os.system("pause")
+
+
+
+def guardarNota(typeNota: str, codigoAlumno: str):
+    opContinuar = "s"
+    while opContinuar in "Ss":
+        alumno = alumnos.get(codigoAlumno)
+        notaList = alumno["notas"][typeNota]
+        nota = float(input(f"Ingresa la nota Nª{len(notaList)} de {typeNota} para el Estudiante {alumno['nombre']} :> "))
+        opContinuar = input(f"Desea Ingresar otra Nota de {typeNota} a {alumno['nombre']} S(si) o N(no) :> ")
+        notaList.append(nota)
+    
+    
+
+
+
+def getAlumnoID():
+    hasError = True
+    while hasError:
+        os.system("cls")
+        codeAlumno = input("Ingresa el codigo del Estudiante :>")
+        data = alumnos.get(codeAlumno, False)
+        if data:
+            hasError = False
+            return data["codigo"]
+        else:
+            print("Error no encontre este estudiante")
+            os.system("pause")
+
+def alumnoPrueba():
+    codigo = "123"
+    alumno = {
+            "codigo": codigo,
+            "nombre": "Alumno de Prueba",
+            "edad": 10,
+            "notas": {
+                "parciales": [],
+                "quizes": [],
+                "trabajos": []
+            }
+        }
+    alumnos.update({codigo:alumno})
