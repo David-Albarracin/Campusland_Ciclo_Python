@@ -28,8 +28,6 @@ while run:
 
 
 
-
-
 """
 PROGRAMA PARA CALCULAR LAS NOTAS DE N ESTUDIANTES..
 
