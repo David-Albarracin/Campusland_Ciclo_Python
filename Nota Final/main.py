@@ -20,12 +20,15 @@ while run:
             if (opSubMenuNotas == 1):
                 alumnos.guardarNota("parciales", codigo)
             elif(opSubMenuNotas == 2):
-                pass
+                alumnos.guardarNota("quizes", codigo)
             elif(opSubMenuNotas == 3):
-                pass
+                alumnos.guardarNota("trabajos", codigo)
             opSubMenuNotas = 4
     elif (opsMenus == 3):
         alumnos.buscarAlumno()
+        os.system("pause")
+    elif (opsMenus == 4):
+        alumnos.listarAlumnos()
         os.system("pause")
     elif (opsMenus == 5):
         run = False

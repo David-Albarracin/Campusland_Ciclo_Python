@@ -43,13 +43,12 @@ def guardarNota(typeNota: str, codigoAlumno: str):
     opContinuar = "s"
     while opContinuar in "Ss":
         alumno = alumnos.get(codigoAlumno)
-        notaList = alumno["notas"][typeNota]
-        nota = float(input(f"Ingresa la nota Nª{len(notaList)} de {typeNota} para el Estudiante {alumno['nombre']} :> "))
+        notaList = alumno.get("notas").get(typeNota)
+        nota = float(input(f"Ingresa la nota Nª{len(notaList) + 1} de {typeNota} para el Estudiante {alumno['nombre']} :> "))
         opContinuar = input(f"Desea Ingresar otra Nota de {typeNota} a {alumno['nombre']} S(si) o N(no) :> ")
         notaList.append(nota)
     
     
-
 
 
 def getAlumnoID():
@@ -65,6 +64,8 @@ def getAlumnoID():
             print("Error no encontre este estudiante")
             os.system("pause")
 
+
+
 def alumnoPrueba():
     codigo = "123"
     alumno = {
@@ -78,3 +79,8 @@ def alumnoPrueba():
             }
         }
     alumnos.update({codigo:alumno})
+
+def listarAlumnos():
+    pass
+
+    #Calcular la nota final, El promedio del Grupo, Cual fue el mejor y el peor 
