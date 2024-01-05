@@ -1,5 +1,6 @@
 import controllers.db as db
 import templates.menus as menus
+import controllers.reusable as reusable
 
 #db
 db.URL = "/data/db.json"
@@ -14,17 +15,28 @@ opcions = [
     'Menu Principal'
 ]
 
+cliente = {
+    "cc": "",
+    "nombre": "",
+    "apellidos": "",
+    "email_personal": "",
+    "email_empresarial": "",
+    "edad": 0,
+    "telefonos": []
+}
+
 
 
 def menu():
     while(True):
         op = input(menus.printMenus(header, opcions))
         if(op == "1"):
-            cliente = {
-                "cc": input("Ingresa la Cedula de Ciudadanida del Cliente :> "),
-                "nombre": input("Ingresa el Nombre del Cliente :> ")
-            }
-            print(cliente)
+            for key, value in cliente.items():
+                cliente[key] = input(f"Ingresa {key.upper()} del Cliente")
+                if type(value) == int:
+                    cliente[key] = reusable.checkInput("int",f"Ingresa {key.upper()} del Cliente")
+                elif type(value) == list:
+                    pass
         elif(op == "5"):
             return
         else:
