@@ -1,0 +1,16 @@
+{
+    "123": {
+        "cc": "123",
+        "nombre": "Mario",
+        "apellidos": "Pinto",
+        "emailpersonal": "ddd",
+        "emailcorporativo": "fff",
+        "edad": 12,
+        "telefono": [
+            {
+                "titulo": "Casa",
+                "valor": "44444"
+            }
+        ]
+    }
+}
