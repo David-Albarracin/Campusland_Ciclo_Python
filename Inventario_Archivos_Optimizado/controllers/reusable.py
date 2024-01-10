@@ -1,8 +1,14 @@
+import os
 
 
+def showError(message):
+    pass
+
+def showSuccess():
+    pass
 
 
-def checkInput(typeData:"int" or "float",message):
+def checkInput(typeData,message):
     while True:
         try:
             if typeData == "int":

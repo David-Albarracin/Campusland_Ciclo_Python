@@ -1,5 +1,13 @@
-# Ejercicios python Campusland 2024
+![Logo](https://www.python.org/static/img/python-logo.png)
 
-En estos Ejercicios vamos a practicar las condicionales los ciclos las listas en python
-Estos ejercicios estan relazionados con el ciclo de fundamentos de programacion en campusland
+# Ejemplos En Clase CampusLand Modulo Python
+
+En Este Repositorio Encontraremos los ejemplos vistos en el modulo de fundamentos de programacion transcritos a python.
+
+## Ahorcado Game Ejemplo
+
+1. **Solucion:**
+    Para la Solucion de Este Ejercicio Realizamos un ciclo que se mantenga en ejecucion hasta que el usuario pierda las 3 vidas
+    
+
 
