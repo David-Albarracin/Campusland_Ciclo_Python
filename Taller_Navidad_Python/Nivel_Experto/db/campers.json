@@ -1,0 +1,26 @@
+{
+    "007": {
+        "cc": "007",
+        "nombre": "jame",
+        "apellido": "bone",
+        "ciudad": "Bucaramanga",
+        "direccion": "2",
+        "acudiente": "pepe",
+        "telefono": {
+            "celular": "2",
+            "fijo": "2"
+        },
+        "estado": "estudiando",
+        "notas": {
+            "moduloFundamentos": {
+                "notaPruebaTecnica": 57.0,
+                "notaPruebaTeorica": 28.5,
+                "notasTrabajosQuizes": 9.5,
+                "definitiva": 95.0
+            }
+        },
+        "ruta": "java",
+        "trainer": "johlver",
+        "grupo": "j1_1"
+    }
+}

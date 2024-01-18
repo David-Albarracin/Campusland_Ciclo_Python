@@ -1,6 +1,6 @@
 ![Logo](https://www.python.org/static/img/python-logo.png)
 
-# Ejemplos CampusLand Modulo Python
+# Ejemplos En Clase CampusLand Modulo Python
 
 En Este Repositorio Encontraremos los ejemplos vistos en el modulo de fundamentos de programacion transcritos a python.
 

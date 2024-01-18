@@ -1,0 +1,54 @@
+{
+    "blockbuster": {
+        "peliculas": {
+            "P01": {
+                "id": "P01",
+                "nombre": "Rambo",
+                "duracion": "80",
+                "sinopsis": "10 de enero a las dos de la ma\u00c3\u00b1ana era un dia",
+                "generos": {
+                    "G01": {
+                        "id": "G01",
+                        "nombre": "accion"
+                    },
+                    "G02": {
+                        "id": "G02",
+                        "nombre": "D"
+                    }
+                },
+                "actores": {
+                    "A01": {
+                        "id": "A01",
+                        "nombre": "silvester stallone",
+                        "rol": "protagonista"
+                    },
+                    "A02": {
+                        "id": "A02",
+                        "nombre": "P",
+                        "rol": "reparto"
+                    }
+                },
+                "formato": {
+                    "F01": {
+                        "id": "F01",
+                        "nombre": "DVD",
+                        "NroCopias": 2,
+                        "valorPrestamo": 5000
+                    },
+                    "F02": {
+                        "id": "F01",
+                        "nombre": "BlueRay",
+                        "NroCopias": 4,
+                        "valorPrestamo": 6000
+                    },
+                    "F03": {
+                        "id": "F03",
+                        "nombre": "DVD",
+                        "NroCopias": 2,
+                        "valorPrestamo": 2000
+                    }
+                }
+            }
+        }
+    }
+}

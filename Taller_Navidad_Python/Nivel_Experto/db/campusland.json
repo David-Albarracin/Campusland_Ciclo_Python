@@ -1,0 +1,152 @@
+{
+    "areas": {
+        "artemis": {
+            "nombre": "artemis",
+            "morning": [],
+            "afternoon": []
+        },
+        "sputnik": {
+            "nombre": "sputnik",
+            "morning": [
+                "m1_2"
+            ],
+            "afternoon": []
+        },
+        "apolo": {
+            "nombre": "apolo",
+            "morning": [
+                "j1_1",
+                "j2_1"
+            ],
+            "afternoon": []
+        }
+    },
+    "rutas": {
+        "nodejs": {
+            "nombreRuta": "nodejs",
+            "area": "sputnik",
+            "fechaInicio": "27-11-2023",
+            "fechaFinal": "3-6-2024",
+            "trainers": [
+                "miguel"
+            ],
+            "grupos": [
+                "m1_2"
+            ],
+            "jornada": "morning",
+            "fundamentosProgramacion": [
+                "Introducci\u00f3n a la algoritmia",
+                "PSeInt"
+            ],
+            "programacionWEB": [
+                "HTML",
+                "Bootstrap"
+            ],
+            "programacionFormal": [
+                "JavaScript",
+                "C#"
+            ],
+            "basesDatos": [
+                "MongoDB",
+                "MySql"
+            ],
+            "backend": [
+                "NodeJS",
+                "Express"
+            ]
+        },
+        "java": {
+            "nombreRuta": "java",
+            "area": "apolo",
+            "fechaInicio": "27-11-2023",
+            "fechaFinal": "3-6-2024",
+            "trainers": [
+                "johlver"
+            ],
+            "grupos": [
+                "j1_1"
+            ],
+            "jornada": "morning",
+            "fundamentosProgramacion": [
+                "Introducci\u00f3n a la algoritmia",
+                "PSeInt"
+            ],
+            "programacionWEB": [
+                "HTML",
+                "CSS"
+            ],
+            "programacionFormal": [
+                "Java",
+                "C#"
+            ],
+            "basesDatos": [
+                "Postgresql",
+                "MySql"
+            ],
+            "backend": [
+                "Spring Boot",
+                "Express"
+            ]
+        },
+        "netcore": {
+            "nombreRuta": "netcore",
+            "area": "apolo",
+            "fechaInicio": "9-1-2024",
+            "fechaFinal": "15-7-2024",
+            "trainers": [
+                "johlver"
+            ],
+            "grupos": [
+                "j2_1"
+            ],
+            "jornada": "morning",
+            "fundamentosProgramacion": [
+                "Introducci\u00f3n a la algoritmia",
+                "PSeInt"
+            ],
+            "programacionWEB": [
+                "HTML",
+                "CSS"
+            ],
+            "programacionFormal": [
+                "Java",
+                "C#"
+            ],
+            "basesDatos": [
+                "Postgresql",
+                "MySql"
+            ],
+            "backend": [
+                "NetCore",
+                "POO"
+            ]
+        }
+    },
+    "trainers": {
+        "johlver": {
+            "uid": "1",
+            "nombre": "johlver",
+            "jornada": "morning",
+            "grupos": [
+                "j1_1",
+                "j2_1"
+            ]
+        },
+        "miguel": {
+            "uid": "2",
+            "nombre": "miguel",
+            "jornada": "morning",
+            "grupos": [
+                "m1_2"
+            ]
+        }
+    },
+    "grupos": {
+        "j1_1": [
+            "1",
+            "007"
+        ],
+        "j2_1": [],
+        "m1_2": []
+    }
+}
